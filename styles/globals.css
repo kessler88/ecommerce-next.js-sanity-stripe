@@ -221,6 +221,11 @@ text-align: end;
   width: 100%;
   margin-top: 120px;
 }
+
+.banner-p-text{
+  font-size: 0.5rem;
+}
+
 .banner-desc{
   display: flex ;
   justify-content: space-between;
@@ -238,7 +243,7 @@ text-align: end;
 }
 .banner-desc .left h3{
   font-weight: 900;
-  font-size: 80px;
+  font-size: 60px;
   margin-left: 25px;
 }
 .banner-desc .left p{
@@ -250,16 +255,18 @@ text-align: end;
   left: 8%; */
   top: -25%;
   left: 25%;
+  width: auto;
+  height: 550px;
 }
 .banner-desc .right{
   line-height: 1.4;
 }
 .banner-desc .right h3{
   font-weight: 800;
-  font-size: 60px;
+  font-size: 40px;
 }
 .banner-desc .right p{
-  font-size: 18px;
+  font-size: 12px;
 }
 .banner-desc .right .company-desc{
   font-size: 14px;
@@ -633,21 +640,21 @@ margin-top: 160px;
     margin-top: 80px;
   }
   .footer-banner-image{
-    width: 77%;
-    left: 30%;
+    width: auto;
+    left: 40%;
     top: 6%;
-    height: 56%
+    height: 60%;
   }
   .banner-desc .left h3{
     font-weight: 900;
-    font-size: 50px;
-    margin-left: 5px;
+    font-size: 35px;
+    margin-left: 10px;
   }
   .banner-desc .left p{
     margin:18px;
   }
   .banner-desc .right h3{
-    font-size: 45px;
+    font-size: 30px;
   }
   .banner-desc .right p{
     font-size: 18px;

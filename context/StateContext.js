@@ -61,21 +61,18 @@ export const StateContext = ({ children }) => {
 
     foundProduct = cartItems.find((item) => item._id === id);
     index = cartItems.findIndex((item) => item._id === id);
-    //filter is a non-mutative method whereas splice is, so splice can't use on state variables.
-    //use filter to keep all the items (id !== id) but filter out the items' id === id
-    //create new version of cart items without the cart item we're currently updating
-    const newCartItems = cartItems.filter((item) => item._id !== id); 
 
+    //only non-mutative method be use on state variables.
     //we shld only just update the current cart item product that we're trying to update  
     //not add new products to cart. 
     if (action === 'inc') {
-      setCartItems([...newCartItems, { ...foundProduct, quantity: foundProduct.quantity + 1 }]);
+      setCartItems(cartItems.map((item) => item._id === id ? { ...foundProduct, quantity: foundProduct.quantity + 1 } : item ));
       setTotalPrice((prevTotalPrice) => prevTotalPrice + foundProduct.price);
       setTotalQuantities((prevTotalQuantities) => prevTotalQuantities + 1);
     } else if (action === 'dec') { 
       //the product quantity must > 1 in order to decrement quantity.
       if (foundProduct.quantity > 1) {
-        setCartItems([...newCartItems, { ...foundProduct, quantity: foundProduct.quantity - 1 }]);
+        setCartItems(cartItems.map((item) => item._id === id ? { ...foundProduct, quantity: foundProduct.quantity - 1 } : item ));
         setTotalPrice((prevTotalPrice) => prevTotalPrice - foundProduct.price);
         setTotalQuantities((prevTotalQuantities) => prevTotalQuantities - 1);
       }

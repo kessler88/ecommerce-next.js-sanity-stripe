@@ -27,14 +27,17 @@ const FooterBanner = ({
           <p>{saleTime}</p>
         </div>
         <div className="right">
-          <p>{smallText}</p>
+          <h4>{smallText}</h4>
           <h3>{midText}</h3>
-          <p>{desc}</p>
+          <p>
+            Company grown from 20 employees to 150+ employee in last 12 months
+          </p>
           <Link href={`/product/${product}`}>
             <button type="button">{buttonText}</button>
           </Link>
-          <img src={urlFor(image)} className="footer-banner-image" alt="banner-image" />
         </div>
+
+        <img src={urlFor(image)} className="footer-banner-image" />
       </div>
     </div>
   );
