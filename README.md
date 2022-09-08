@@ -16,7 +16,8 @@ Products:
 ![Screenshot 2022-09-08 095635](https://user-images.githubusercontent.com/67879767/189141830-df544b33-8088-441a-a338-16865cc5644a.jpg)
 
 Footer banner:
-![Screenshot 2022-09-08 095705](https://user-images.githubusercontent.com/67879767/189141900-a73f6f37-4d66-4daf-be6e-9570b8a05d99.jpg)
+![Screenshot 2022-09-08 095646](https://user-images.githubusercontent.com/67879767/189142826-7b13292d-d8d5-443f-bf7f-edbac5832e60.jpg)
+
 
 Product details:
 ![Screenshot 2022-09-08 095705](https://user-images.githubusercontent.com/67879767/189142211-7befba07-0a07-441d-8d20-1439462c46e2.jpg)
